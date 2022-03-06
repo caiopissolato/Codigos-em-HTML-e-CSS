@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/*
+id apenas um por página
+class quantos quiser por página
+*/
+body{
+    background-color: rgb(155, 255, 164);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Ou apenas #principal*/
+h1#principal{
+    background-color: black;
+    color: rgb(50, 100, 0);
+    text-align: center;
+}
+
+/*Ou apenas .intermediario*/
+h2.intermediario{
+    color: yellow;
+}
+
+h2.avancado{
+    color: red;
+}
+
+h1{
+    color: rgb(50, 100, 0);
+}
+
+h2{
+    color: rgb(81, 145, 17);
+}

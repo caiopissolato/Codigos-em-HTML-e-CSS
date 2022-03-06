@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário</title>
+    </head>
+    
+    <form action="index.html" method="get">
+        <body>
+            <fieldset>
+                <legend>Formulário de Cadastro</legend>
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                
+                    <label>Nome Completo <br> 
+                        <input type="text" name="nome completo" size="69" maxlength="30"> <br> 
+                    </label>
+                    
+                    <label>Email <br>
+                        <input type="email" name="email" size="30">
+                    </label>
+                    
+                    <label> 
+                        <label for="data"> &emsp; Data de Nascimento</label>
+                        <input type="date" name="data"/><br>
+                    </label>
+                   
+                    <label>Cidade <br>
+                        <input type="text" name="cidade" size="30">
+                    </label>   
+                    
+                    <label> &emsp; Estado
+                        <select name="estados">
+                            <option value="matogrosso">MT</option>
+                            <option value="goias">GO</option>
+                            <option value="matogrossodosul">MS</option>
+                        </select>
+                    </label> 
+                    
+                    <label> &emsp; &emsp; Sexo:
+                        <input type="radio" name="sexo" value="masculino"/>Masc. 
+                        <input type="radio" name="sexo" value="feminino"/>Fem.
+                    </label>                   
+                    
+                
+                </fieldset>
+                <br><br>
+                <fieldset>
+                    <legend>Informações acadêmicas</legend>
+                        
+                    <label>RGA <br>
+                        <input type="text" name="rga" size="30" required="required">
+                    </label> <br> <br>
+                        
+                    Disciplinas do curso já realizadas (se aprovado) <br>
+                    <label><input type="checkbox" name="materia" value="ed1"/>Estrutura de dados 1 </label>&emsp;
+                    <label><input type="checkbox" name="materia" value="ed2"/>Estrutura de dados 2 </label>&emsp;
+                    <label><input type="checkbox" name="materia" value="prog2"/>Programação 2 </label>&emsp;
+                    <label><input type="checkbox" name="materia" value="prog3"/>Programação 3 </label><br><br>
+
+                    Horários reservados para aulas síncronas: <br>
+                    <table border="1">
+                        <tr>
+                            <th></th>
+                            <th scope="col">Seg</th>
+                            <th scope="col">Ter</th>
+                            <th scope="col">Qua</th>
+                            <th scope="col">Qui</th>
+                            <th scope="col">Sex</th>
+                        </tr>
+                        <tr>
+                            <td>07:30 às 09:30</td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>09:30 às 11:30</td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>13:30 às 15:30</td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>15:30 às 17:30</td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                    </table>            
+                </fieldset>
+            </fieldset>        
+        </body>
+        <input type="submit" name="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</html>
